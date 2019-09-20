@@ -1,4 +1,3 @@
-
 # _*_ coding:utf-8 _*_
 import hashlib
 import time
@@ -16,7 +15,7 @@ def hello():
  
 @app.route('/wechat', methods=['GET', 'POST'])
 def wechat():
-    WECHAT_TOKEN = '111'  # 这个token要和我们测试的token一致
+    WECHAT_TOKEN = 'xinqingshishuidanruoyun'  # 这个token要和我们测试的token一致
  
     if request.method == "GET":
         """对接微信服务器"""
@@ -35,4 +34,4 @@ def wechat():
         else:
             return "error"
 if __name__ == '__main__':
-    app.run(debug=True, host='IP', port=52001)
+    app.run(debug=True, host='66.112.221.82', port=52001)
