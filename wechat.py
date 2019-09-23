@@ -34,4 +34,4 @@ def wechat():
         else:
             return "error"
 if __name__ == '__main__':
-    app.run(debug=True, host='66.112.221.82', port=80)
+    app.run(debug=True, host='IP', port=80)
